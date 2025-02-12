@@ -6,14 +6,18 @@ import { AppComponent } from './app.component';
 
 import { AppHeaderComponent } from './layouts/header/header.component'; // Import the component
 import { AppFooterComponent } from './layouts/footer/footer.component';
-import { PerfilSabroComponent } from './perfil-sabro/perfil-sabro.component'; // Import the component
+import { PerfilSabroComponent } from './perfil-sabro/perfil-sabro.component';
+import { FesaiComponent } from './pages/fesai/fesai.component';
+import { MenuComponent } from './layouts/menu/menu.component'; // Import the component
 
 @NgModule({
   declarations: [
     AppComponent,
     AppHeaderComponent,
     AppFooterComponent,
-    PerfilSabroComponent
+    PerfilSabroComponent,
+    FesaiComponent,
+    MenuComponent
   ],
   imports: [
     BrowserModule,
