@@ -8,7 +8,8 @@ import { AppHeaderComponent } from './layouts/header/header.component'; // Impor
 import { AppFooterComponent } from './layouts/footer/footer.component';
 import { PerfilSabroComponent } from './perfil-sabro/perfil-sabro.component';
 import { FesaiComponent } from './pages/fesai/fesai.component';
-import { MenuComponent } from './layouts/menu/menu.component'; // Import the component
+import { MenuComponent } from './layouts/menu/menu.component';
+import { ClockComponent } from './pages/clock/clock.component'; // Import the component
 
 @NgModule({
   declarations: [
@@ -17,7 +18,8 @@ import { MenuComponent } from './layouts/menu/menu.component'; // Import the com
     AppFooterComponent,
     PerfilSabroComponent,
     FesaiComponent,
-    MenuComponent
+    MenuComponent,
+    ClockComponent
   ],
   imports: [
     BrowserModule,
