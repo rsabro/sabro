@@ -13,6 +13,8 @@ import { MenuComponent } from './layouts/menu/menu.component';
 import { ClockComponent } from './pages/clock/clock.component';
 import { PageNotFoundComponent } from './layouts/page-not-found/page-not-found.component';
 import { SheetsComponent } from './pages/sheets/sheets.component'; // Import the component
+import { FormsModule } from '@angular/forms';
+import { LoginComponent } from './pages/login/login.component';
 
 @NgModule({
   declarations: [
@@ -23,14 +25,16 @@ import { SheetsComponent } from './pages/sheets/sheets.component'; // Import the
     FesaiComponent,
     MenuComponent,
     ClockComponent,
+    LoginComponent,
     PageNotFoundComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     HttpClientModule,
-    HttpClientJsonpModule,
-    SheetsComponent
+    SheetsComponent, // Ensure this is in the correct array
+    SheetsComponent,
+    FormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]
