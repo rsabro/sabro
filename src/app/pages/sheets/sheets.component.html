@@ -1,0 +1,44 @@
+<br /><br />
+<div class="container mt-4">
+    <h3>Criando uma Google Planilhas</h3>
+    <img src="assets\images\sheets.PNG" alt="GoogleShets" class="mb-4" width="80%" />
+    <h3>Chamando a API no Angular</h3>
+        <p>Para consumir a API no Angular, basta utilizar o serviço HttpClient, concatenando os parâmetros necessários conforme o exemplo de código abaixo.</p>
+        <ul>
+            <li>Os parâmetros obrigatórios são:</li>
+            <li>link: o ID da sua planilha do Google;</li>
+            <li>pagina: o nome da aba onde os dados estão armazenados;</li>
+            <li>celulas: o intervalo (range) das células que deseja retornar.</li>
+            <li>Com esses parâmetros, os dados serão carregados corretamente na sua aplicação.</li>
+        </ul>
+        <p>Veja o exemplo de layout logo abaixo.</p>
+    <h2 class="mb-4">Lista de Celulares</h2>
+  
+    <!-- Erro -->
+    <div *ngIf="errorMessage" class="alert alert-danger">
+      {{ errorMessage }}
+    </div>
+  
+    <!-- Lista de smartphones -->
+    <div class="row" *ngIf="smartphones.length > 0">
+      <div class="col-md-4 mb-4" *ngFor="let phone of smartphones">
+        <div class="card">
+            <div class="col-md-4">
+                <img [src]="phone.imagem" class="card-img-top" alt="Imagem do {{ phone.modelo }}" *ngIf="phone.imagem" height="30%" />
+            </div>
+          <div class="card-body">
+            <h5 class="card-title">{{ phone.marca }} {{ phone.modelo }}</h5>
+            <h6 class="card-subtitle mb-2 text-muted">Sistema: {{ phone.sistema }}</h6>
+            <p class="card-text">{{ phone.sobre }}</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  
+    <!-- Carregando ou vazio -->
+    <div *ngIf="!errorMessage && smartphones.length === 0" class="text-muted">
+      Nenhum dado encontrado.
+    </div>
+  
+  </div>
+  
