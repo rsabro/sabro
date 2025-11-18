@@ -15,6 +15,7 @@ import { PageNotFoundComponent } from './layouts/page-not-found/page-not-found.c
 import { SheetsComponent } from './pages/sheets/sheets.component'; // Import the component
 import { FormsModule } from '@angular/forms';
 import { LoginComponent } from './pages/login/login.component';
+import { BrutusracedeafsComponent } from './pages/brutusracedeafs/brutusracedeafs.component';
 
 @NgModule({
   declarations: [
@@ -26,7 +27,8 @@ import { LoginComponent } from './pages/login/login.component';
     MenuComponent,
     ClockComponent,
     LoginComponent,
-    PageNotFoundComponent
+    PageNotFoundComponent,
+    BrutusracedeafsComponent
   ],
   imports: [
     BrowserModule,

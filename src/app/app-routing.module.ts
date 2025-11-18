@@ -1,4 +1,4 @@
-import { NgModule, Component } from '@angular/core';
+import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
 
 import { HomeComponent } from './pages/home/home.component';
@@ -7,11 +7,13 @@ import { PageNotFoundComponent } from './layouts/page-not-found/page-not-found.c
 import { ClockComponent } from './pages/clock/clock.component';
 import { SheetsComponent } from './pages/sheets/sheets.component'; // Import the component
 import { LoginComponent } from './pages/login/login.component';
+import { BrutusracedeafsComponent } from './pages/brutusracedeafs/brutusracedeafs.component';
 
 const routes: Routes = [
   { path: 'home', redirectTo: '', pathMatch: 'full' },
   { path: '', component: HomeComponent },
   { path: 'fesai', component: FesaiComponent },
+  { path: 'brd', component: BrutusracedeafsComponent },
   { path: 'celulares', component: SheetsComponent },
   { path: 'clock', component: ClockComponent },
   { path: 'login', component: LoginComponent },
