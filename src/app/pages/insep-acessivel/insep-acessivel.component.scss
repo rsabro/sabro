@@ -1,0 +1,557 @@
+/* =========================================
+   INSEP ACESSÍVEL - HERO
+========================================= */
+
+.insep-hero {
+    min-height: 560px;
+
+    display: flex;
+    align-items: center;
+
+    padding: 120px 0 80px;
+
+    background:
+        radial-gradient(
+            circle at 75% 40%,
+            rgba(0, 200, 248, 0.14),
+            transparent 35%
+        ),
+        linear-gradient(
+            135deg,
+            #020816,
+            #06172e
+        );
+
+    color: white;
+
+    border-bottom: 1px solid rgba(0, 200, 248, 0.12);
+}
+
+
+.insep-hero h1 {
+    font-size: 4rem;
+    font-weight: 800;
+
+    margin-bottom: 10px;
+}
+
+
+.insep-hero h2 {
+    font-size: 1.6rem;
+    font-weight: 600;
+
+    color: #dce7f3;
+
+    margin-bottom: 22px;
+}
+
+
+.insep-hero p {
+    max-width: 620px;
+
+    color: #b9c7d8;
+
+    line-height: 1.8;
+
+    margin-bottom: 14px;
+}
+
+
+/* =========================================
+   SÍMBOLO
+========================================= */
+
+.insep-symbol {
+    width: 230px;
+    height: 230px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    margin: auto;
+
+    font-size: 7rem;
+
+    background:
+        linear-gradient(
+            145deg,
+            #07172d,
+            #04101f
+        );
+
+    border: 1px solid rgba(0, 200, 248, 0.30);
+    border-radius: 50%;
+
+    box-shadow:
+        0 20px 55px rgba(0, 0, 0, 0.40),
+        0 0 35px rgba(0, 200, 248, 0.10);
+}
+
+
+/* =========================================
+   BOTÕES HERO
+========================================= */
+
+.hero-buttons {
+    display: flex;
+    flex-wrap: wrap;
+
+    gap: 14px;
+
+    margin-top: 30px;
+}
+
+
+/* =========================================
+   SOBRE O PROJETO
+========================================= */
+
+.insep-project {
+    padding: 90px 0;
+
+    background: #020816;
+
+    color: white;
+}
+
+
+.insep-project h2 {
+    font-size: 2.5rem;
+    font-weight: 700;
+
+    margin-bottom: 20px;
+}
+
+
+.insep-project p {
+    color: #bcc8d8;
+
+    line-height: 1.8;
+
+    margin-bottom: 16px;
+}
+
+
+/* =========================================
+   PREVIEW
+========================================= */
+
+.project-preview {
+    padding: 12px;
+
+    background: #061329;
+
+    border: 1px solid rgba(0, 200, 248, 0.20);
+    border-radius: 20px;
+
+    box-shadow:
+        0 20px 55px rgba(0, 0, 0, 0.40);
+
+    transition:
+        transform 0.35s ease,
+        border-color 0.35s ease,
+        box-shadow 0.35s ease;
+}
+
+
+.project-preview:hover {
+    transform: translateY(-8px);
+
+    border-color: rgba(0, 200, 248, 0.65);
+
+    box-shadow:
+        0 30px 70px rgba(0, 0, 0, 0.50),
+        0 0 30px rgba(0, 200, 248, 0.10);
+}
+
+
+.project-preview img {
+    width: 100%;
+    height: auto;
+
+    display: block;
+
+    border-radius: 14px;
+}
+
+
+/* =========================================
+   TECNOLOGIAS
+========================================= */
+
+.project-info {
+    display: flex;
+    flex-wrap: wrap;
+
+    gap: 8px;
+
+    margin: 25px 0;
+}
+
+
+.project-info span {
+    padding: 7px 13px;
+
+    color: #00c8f8;
+
+    background: rgba(0, 200, 248, 0.08);
+
+    border: 1px solid rgba(0, 200, 248, 0.20);
+    border-radius: 20px;
+
+    font-size: 12px;
+    font-weight: 600;
+}
+
+
+.project-link {
+    color: #00c8f8;
+
+    font-weight: 600;
+
+    text-decoration: none;
+}
+
+
+.project-link:hover {
+    text-decoration: underline;
+}
+
+
+/* =========================================
+   ACESSIBILIDADE
+========================================= */
+
+.insep-accessibility {
+    padding: 90px 0;
+
+    background:
+        linear-gradient(
+            135deg,
+            #031022,
+            #06162d
+        );
+
+    color: white;
+
+    border-top: 1px solid rgba(0, 200, 248, 0.12);
+}
+
+
+.section-title {
+    max-width: 700px;
+
+    margin-bottom: 45px;
+}
+
+
+.section-title h2 {
+    font-size: 2.4rem;
+    font-weight: 700;
+
+    margin-bottom: 15px;
+}
+
+
+.section-title p {
+    color: #b9c7d8;
+
+    line-height: 1.7;
+}
+
+
+/* =========================================
+   CARDS DE ACESSIBILIDADE
+========================================= */
+
+.access-card {
+    height: 100%;
+
+    padding: 25px;
+
+    background: #07172d;
+
+    border: 1px solid rgba(0, 200, 248, 0.18);
+    border-radius: 16px;
+
+    transition:
+        transform 0.3s ease,
+        border-color 0.3s ease,
+        box-shadow 0.3s ease;
+}
+
+
+.access-card:hover {
+    transform: translateY(-7px);
+
+    border-color: rgba(0, 200, 248, 0.65);
+
+    box-shadow:
+        0 18px 40px rgba(0, 0, 0, 0.35),
+        0 0 20px rgba(0, 200, 248, 0.08);
+}
+
+
+.access-icon {
+    width: 48px;
+    height: 48px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    margin-bottom: 18px;
+
+    background: rgba(0, 200, 248, 0.10);
+
+    border-radius: 50%;
+
+    font-size: 22px;
+}
+
+
+.access-card h3 {
+    font-size: 17px;
+
+    margin-bottom: 10px;
+}
+
+
+.access-card p {
+    margin: 0;
+
+    color: #b9c7d8;
+
+    font-size: 13px;
+    line-height: 1.7;
+}
+
+
+/* =========================================
+   MINHA PARTICIPAÇÃO
+========================================= */
+
+.insep-participation {
+    padding: 90px 0;
+
+    background: #020816;
+
+    color: white;
+}
+
+
+.insep-participation h2 {
+    font-size: 2.5rem;
+    font-weight: 700;
+
+    margin-bottom: 20px;
+}
+
+
+.insep-participation p {
+    color: #bcc8d8;
+
+    line-height: 1.8;
+}
+
+
+/* =========================================
+   CARD PARTICIPAÇÃO
+========================================= */
+
+.participation-card {
+    padding: 30px;
+
+    background:
+        linear-gradient(
+            145deg,
+            #07172d,
+            #04101f
+        );
+
+    border: 1px solid rgba(0, 200, 248, 0.18);
+    border-radius: 18px;
+
+    box-shadow:
+        0 18px 45px rgba(0, 0, 0, 0.25);
+}
+
+
+.participation-item {
+    display: grid;
+
+    grid-template-columns: 120px 1fr;
+
+    gap: 15px;
+
+    padding: 15px 0;
+
+    border-bottom: 1px solid rgba(255, 255, 255, 0.06);
+}
+
+
+.participation-item:last-child {
+    border-bottom: none;
+}
+
+
+.participation-item strong {
+    color: #00c8f8;
+
+    font-size: 13px;
+}
+
+
+.participation-item span {
+    color: #c4cfdb;
+
+    font-size: 13px;
+}
+
+
+/* =========================================
+   CTA
+========================================= */
+
+.insep-cta {
+    padding: 65px 0;
+
+    background:
+        radial-gradient(
+            circle at center,
+            rgba(0, 200, 248, 0.12),
+            transparent 60%
+        ),
+        #06172e;
+
+    color: white;
+}
+
+
+.insep-cta h2 {
+    margin-bottom: 10px;
+
+    font-size: 2rem;
+    font-weight: 700;
+}
+
+
+.insep-cta p {
+    margin: 0;
+
+    color: #bcc8d8;
+}
+
+
+.project-actions {
+    display: flex;
+    justify-content: flex-end;
+    flex-wrap: wrap;
+
+    gap: 14px;
+}
+
+
+/* =========================================
+   LABEL
+========================================= */
+
+.section-label {
+    display: inline-block;
+
+    margin-bottom: 14px;
+
+    color: #00c8f8;
+
+    font-size: 11px;
+    font-weight: 700;
+
+    letter-spacing: 2px;
+}
+
+
+/* =========================================
+   RESPONSIVO
+========================================= */
+
+@media (max-width: 992px) {
+
+    .insep-hero {
+        padding-top: 130px;
+
+        text-align: center;
+    }
+
+
+    .insep-hero p {
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+
+    .hero-buttons {
+        justify-content: center;
+    }
+
+
+    .insep-symbol {
+        margin-top: 45px;
+    }
+
+
+    .project-actions {
+        justify-content: flex-start;
+
+        margin-top: 25px;
+    }
+
+}
+
+
+@media (max-width: 576px) {
+
+    .insep-hero h1 {
+        font-size: 2.8rem;
+    }
+
+
+    .insep-hero h2 {
+        font-size: 1.3rem;
+    }
+
+
+    .insep-symbol {
+        width: 180px;
+        height: 180px;
+
+        font-size: 5rem;
+    }
+
+
+    .hero-buttons,
+    .project-actions {
+        flex-direction: column;
+    }
+
+
+    .btn-primary-sabro,
+    .btn-outline-sabro {
+        width: 100%;
+    }
+
+
+    .participation-item {
+        grid-template-columns: 1fr;
+
+        gap: 5px;
+    }
+
+
+    .insep-project,
+    .insep-accessibility,
+    .insep-participation {
+        padding: 65px 0;
+    }
+
+}

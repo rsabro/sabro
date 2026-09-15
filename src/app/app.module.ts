@@ -3,7 +3,7 @@ import { BrowserModule } from '@angular/platform-browser';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
-import { HttpClientModule, HttpClientJsonpModule } from '@angular/common/http';
+import { HttpClientModule } from '@angular/common/http';
 
 import { AppHeaderComponent } from './layouts/header/header.component'; // Import the component
 import { AppFooterComponent } from './layouts/footer/footer.component';
@@ -16,6 +16,7 @@ import { SheetsComponent } from './pages/sheets/sheets.component'; // Import the
 import { FormsModule } from '@angular/forms';
 import { LoginComponent } from './pages/login/login.component';
 import { BrutusracedeafsComponent } from './pages/brutusracedeafs/brutusracedeafs.component';
+import { InsepAcessivelComponent } from './pages/insep-acessivel/insep-acessivel.component';
 
 @NgModule({
   declarations: [
@@ -28,7 +29,8 @@ import { BrutusracedeafsComponent } from './pages/brutusracedeafs/brutusracedeaf
     ClockComponent,
     LoginComponent,
     PageNotFoundComponent,
-    BrutusracedeafsComponent
+    BrutusracedeafsComponent,
+    InsepAcessivelComponent
   ],
   imports: [
     BrowserModule,

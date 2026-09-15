@@ -1,6 +1,37 @@
 /* You can add global styles to this file, and also import other style files */
 @import './assets/styles/global.scss';
 
-body{
-    background-color: #000000;
+:root {
+    --bg: #020816;
+    --bg-light: #061329;
+    --card: #07172d;
+    --card-hover: #0a1d38;
+
+    --cyan: #00c8f8;
+    --cyan-light: #4bddff;
+
+    --white: #ffffff;
+    --text: #c8d3e0;
+    --muted: #8290a3;
+
+    --border: rgba(77, 221, 255, 0.15);
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    margin: 0;
+    background: var(--bg);
+    color: var(--white);
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+section {
+    padding: 90px 0;
+}
+
+a {
+    text-decoration: none;
 }

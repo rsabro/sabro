@@ -1,74 +1,839 @@
-.stl-home{
-    min-height:50vh;
-    display:flex;
-    align-items:center;
+/* =========================================
+   HERO
+========================================= */
 
-    background:#010413;
-    overflow:hidden;
-    margin-top: 65px;
+.hero {
+    min-height: 650px;
+
+    display: flex;
+
+    align-items: center;
+
+    padding-top: 110px;
+
+    background:
+        radial-gradient(
+            circle at 70% 40%,
+            rgba(0, 170, 255, 0.16),
+            transparent 40%
+        ),
+        #020816;
+
+    overflow: hidden;
 }
 
-.hero-text h1{
-    font-size:4rem;
-    font-weight:700;
+.hero-content {
+    position: relative;
+    z-index: 2;
 }
 
-.hero-text h3{
-    margin:20px 0;
+.section-label {
+    display: inline-block;
+
+    color: var(--cyan);
+
+    font-size: 12px;
+
+    font-weight: 600;
+
+    letter-spacing: 2px;
+
+    margin-bottom: 16px;
 }
 
-.hero-text p{
-    max-width:500px;
-    margin-bottom:30px;
+.hero h1 {
+    font-size: clamp(3rem, 5vw, 4.5rem);
+
+    font-weight: 800;
+
+    line-height: 1;
+
+    margin-bottom: 14px;
 }
 
-.hero-img{
-    max-width:100%;
-    width:700px;
-    animation:float 5s ease-in-out infinite;
+.hero h1 span {
+    color: var(--cyan);
 }
 
-@keyframes float{
-    0%{transform:translateY(0);}
-    50%{transform:translateY(-10px);}
-    100%{transform:translateY(0);}
+.hero h2 {
+    font-size: 1.7rem;
+
+    font-weight: 700;
+
+    margin-bottom: 22px;
 }
 
-@media(max-width:992px){
+.hero p {
+    max-width: 520px;
 
-    .stl-home{
-        min-height:auto;
-        padding:120px 0 80px;
-        text-align:center;
+    color: var(--text);
+
+    font-size: 17px;
+
+    line-height: 1.7;
+
+    margin-bottom: 30px;
+}
+
+.hero-buttons {
+    display: flex;
+
+    flex-wrap: wrap;
+
+    gap: 15px;
+}
+
+.btn-primary-sabro,
+.btn-outline-sabro {
+    display: inline-flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    min-height: 48px;
+
+    padding: 0 25px;
+
+    border-radius: 30px;
+
+    font-size: 14px;
+
+    font-weight: 600;
+
+    transition: 0.3s;
+}
+
+.btn-primary-sabro {
+    color: #001321;
+
+    background: linear-gradient(
+        135deg,
+        #00bfff,
+        #26dcff
+    );
+
+    border: 1px solid var(--cyan);
+}
+
+.btn-primary-sabro:hover {
+    color: #001321;
+
+    transform: translateY(-3px);
+
+    box-shadow: 0 10px 30px rgba(0, 200, 248, 0.25);
+}
+
+.btn-outline-sabro {
+    color: white;
+
+    border: 1px solid var(--cyan);
+
+    background: transparent;
+}
+
+.btn-outline-sabro:hover {
+    background: var(--cyan);
+
+    color: #001321;
+
+    transform: translateY(-3px);
+}
+
+.availability {
+    display: flex;
+
+    align-items: center;
+
+    gap: 8px;
+
+    margin-top: 25px;
+
+    color: var(--text);
+
+    font-size: 13px;
+}
+
+.availability span {
+    width: 8px;
+
+    height: 8px;
+
+    border-radius: 50%;
+
+    background: #36e75f;
+
+    box-shadow: 0 0 10px #36e75f;
+}
+
+
+/* =========================================
+   HERO IMAGE
+========================================= */
+
+.hero-image {
+    position: relative;
+
+    display: flex;
+
+    justify-content: center;
+
+    align-items: center;
+
+    min-height: 500px;
+}
+
+.hero-image::after {
+    content: "";
+
+    position: absolute;
+
+    width: 450px;
+
+    height: 450px;
+
+    border-radius: 50%;
+
+    background: rgba(0, 174, 255, 0.12);
+
+    filter: blur(90px);
+
+    z-index: 0;
+}
+
+.hero-image img {
+    position: relative;
+
+    z-index: 1;
+
+    width: 100%;
+
+    max-width: 700px;
+
+    animation: float 6s ease-in-out infinite;
+}
+
+@keyframes float {
+
+    0%,
+    100% {
+        transform: translateY(0);
     }
 
-    .hero-text h1{
-        font-size:2.6rem;
+    50% {
+        transform: translateY(-12px);
     }
 
-    .hero-img{
-        width:450px;
-        margin-top:40px;
-    }
 }
 
-@media(max-width:576px){
 
-    .hero-text h1{
-        font-size:2rem;
-    }
+/* =========================================
+   SEÇÕES
+========================================= */
 
-    .hero-img{
-        width:300px;
-    }
+.section-dark {
+    background: #020816;
 
-    .btn{
-        width:100%;
-        margin-bottom:10px;
-    }
+    border-top: 1px solid var(--border);
 }
 
-.col-lg-8{
-    margin-top: 15%;
-    margin-bottom: 15%;
+.section-blue {
+    background:
+        linear-gradient(
+            135deg,
+            #031022,
+            #05162d
+        );
+
+    border-top: 1px solid var(--border);
+}
+
+.section-title {
+    font-size: 2.3rem;
+
+    font-weight: 700;
+
+    margin-bottom: 20px;
+}
+
+.section-description {
+    color: var(--text);
+
+    line-height: 1.7;
+
+    margin-bottom: 30px;
+}
+
+
+/* =========================================
+   SERVIÇOS
+========================================= */
+
+.service-card {
+    height: 100%;
+
+    padding: 28px;
+
+    border: 1px solid var(--border);
+
+    border-radius: 18px;
+
+    background:
+        linear-gradient(
+            145deg,
+            rgba(7, 23, 45, 0.95),
+            rgba(3, 13, 27, 0.95)
+        );
+
+    transition: 0.3s;
+}
+
+.service-card:hover {
+    transform: translateY(-6px);
+
+    border-color: rgba(0, 200, 248, 0.5);
+
+    background: var(--card-hover);
+
+    box-shadow: 0 15px 40px rgba(0,0,0,0.25);
+}
+
+.service-icon {
+    color: var(--cyan);
+
+    font-size: 32px;
+
+    margin-bottom: 18px;
+}
+
+.service-card h3 {
+    font-size: 17px;
+
+    margin-bottom: 10px;
+}
+
+.service-card p {
+    color: var(--text);
+
+    font-size: 14px;
+
+    line-height: 1.6;
+
+    margin: 0;
+}
+
+
+/* =========================================
+   TECNOLOGIAS
+========================================= */
+
+.tech-grid {
+    display: grid;
+
+    grid-template-columns: repeat(5, 1fr);
+
+    gap: 15px;
+}
+
+.tech-card {
+    min-height: 90px;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    text-align: center;
+
+    padding: 15px;
+
+    background: var(--card);
+
+    border: 1px solid var(--border);
+
+    border-radius: 15px;
+
+    font-size: 13px;
+
+    transition: 0.3s;
+}
+
+.tech-card:hover {
+    transform: translateY(-5px);
+
+    border-color: var(--cyan);
+}
+
+
+/* =========================================
+   CARD PROJETO
+========================================= */
+
+.project-card {
+    height: 100%;
+
+    background: #07172d;
+
+    /* Borda discreta */
+    border: 1px solid rgba(0, 200, 248, 0.20);
+
+    border-radius: 14px;
+
+    overflow: hidden;
+
+    /* Movimento suave */
+    transition:
+        transform 0.3s ease,
+        box-shadow 0.3s ease,
+        border-color 0.3s ease,
+        background 0.3s ease;
+}
+
+
+/* =========================================
+   EFEITO AO PASSAR O MOUSE
+========================================= */
+
+.project-card:hover {
+
+    /* Card sobe */
+    transform: translateY(-8px);
+
+    /* Borda azul fica mais forte */
+    border-color: rgba(0, 200, 248, 0.70);
+
+    /* Fundo fica levemente mais claro */
+    background: #0a1d38;
+
+    /* Sombra */
+    box-shadow:
+        0 15px 35px rgba(0, 0, 0, 0.40),
+        0 0 20px rgba(0, 200, 248, 0.10);
+}
+
+
+/* Imagem */
+.project-image-small {
+    height: 125px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    background: linear-gradient(
+        135deg,
+        #071b34,
+        #020a17
+    );
+
+    overflow: hidden;
+}
+
+
+.project-image-small img {
+    width: 100%;
+    height: 100%;
+
+    object-fit: contain;
+
+    padding: 12px;
+}
+
+
+/* Conteúdo */
+.project-content-small {
+    padding: 16px;
+}
+
+.project-content-small h3 {
+    font-size: 16px;
+
+    font-weight: 700;
+
+    margin-bottom: 8px;
+}
+
+.project-content-small p {
+    color: var(--text);
+
+    font-size: 12px;
+
+    line-height: 1.5;
+
+    min-height: 55px;
+
+    margin-bottom: 10px;
+}
+
+
+/* Tags */
+.project-content-small .tags {
+    margin: 10px 0;
+}
+
+.project-content-small .tags span {
+    font-size: 9px;
+
+    padding: 3px 7px;
+
+    border: none;
+
+    background: rgba(0, 200, 248, 0.08);
+
+    border-radius: 20px;
+
+    color: var(--cyan);
+}
+
+
+/* Link */
+.project-content-small a {
+    color: var(--cyan);
+
+    font-size: 12px;
+
+    font-weight: 600;
+
+    transition: color 0.3s ease;
+}
+
+.project-content-small a:hover {
+    color: white;
+}
+
+
+/* =========================================
+   SOBRE MIM
+========================================= */
+
+#sobre {
+    padding: 75px 0;
+
+    position: relative;
+
+    overflow: hidden;
+}
+
+
+/* =========================================
+   COLUNA 1 - IMAGEM
+========================================= */
+
+.about-image {
+    width: 100%;
+    max-width: 280px;
+
+    margin: 0 auto;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.about-image img {
+    width: 100%;
+    height: auto;
+
+    display: block;
+
+    object-fit: contain;
+}
+
+.about-image img {
+    width: 100%;
+    height: 100%;
+
+    object-fit: cover;
+}
+
+
+/* =========================================
+   COLUNA 2 - TEXTO
+========================================= */
+
+#sobre .section-label {
+    margin-bottom: 12px;
+}
+
+
+#sobre .section-title {
+    font-size: 2rem;
+
+    margin-bottom: 20px;
+}
+
+
+.about-text {
+    color: var(--text);
+
+    font-size: 14px;
+
+    line-height: 1.7;
+
+    margin-bottom: 15px;
+}
+
+
+/* =========================================
+   TECNOLOGIA / INCLUSÃO / EVOLUÇÃO
+========================================= */
+
+.about-tags {
+    display: flex;
+
+    align-items: center;
+
+    flex-wrap: wrap;
+
+    gap: 28px;
+
+    margin-top: 25px;
+}
+
+
+.about-tags span {
+    display: flex;
+
+    align-items: center;
+
+    gap: 7px;
+
+    color: white;
+
+    font-size: 12px;
+
+    font-weight: 500;
+}
+
+
+.about-tags i {
+    color: var(--cyan);
+
+    font-size: 14px;
+}
+
+
+/* =========================================
+   COLUNA 3 - FRASE
+========================================= */
+
+.about-quote {
+    position: relative;
+
+    max-width: 330px;
+
+    margin-left: auto;
+
+    padding: 15px 10px 30px 45px;
+}
+
+
+/* Aspas grandes */
+
+.quote-symbol {
+    position: absolute;
+
+    top: -20px;
+    left: 0;
+
+    color: rgba(0, 200, 248, 0.35);
+
+    font-family: Georgia, serif;
+
+    font-size: 80px;
+
+    font-weight: bold;
+
+    line-height: 1;
+}
+
+
+/* Frase */
+
+.about-quote blockquote {
+    position: relative;
+
+    z-index: 2;
+
+    color: #e4edf7;
+
+    font-family: Georgia, "Times New Roman", serif;
+
+    font-size: 16px;
+
+    font-style: italic;
+
+    line-height: 1.6;
+
+    margin: 0;
+}
+
+
+/* =========================================
+   ASSINATURA
+========================================= */
+
+.sabro-signature {
+    margin-top: 22px;
+
+    color: white;
+
+    font-family:
+        "Brush Script MT",
+        "Segoe Script",
+        cursive;
+
+    font-size: 36px;
+
+    font-style: italic;
+
+    transform: rotate(-5deg);
+}
+
+
+/* Linha decorativa */
+
+.quote-line {
+    width: 100%;
+
+    height: 2px;
+
+    margin-top: 5px;
+
+    background: linear-gradient(
+        90deg,
+        transparent,
+        rgba(0, 200, 248, 0.7),
+        transparent
+    );
+
+    border-radius: 50%;
+}
+
+
+/* =========================================
+   TABLET
+========================================= */
+
+@media (max-width: 992px) {
+
+    #sobre {
+        text-align: center;
+    }
+
+
+    .about-image {
+        width: 240px;
+        height: 240px;
+
+        margin-bottom: 15px;
+    }
+
+
+    .about-text {
+        max-width: 650px;
+
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+
+    .about-tags {
+        justify-content: center;
+    }
+
+
+    .about-quote {
+        max-width: 500px;
+
+        margin: 35px auto 0;
+
+        text-align: left;
+    }
+
+}
+
+
+/* =========================================
+   CELULAR
+========================================= */
+
+@media (max-width: 576px) {
+
+    #sobre {
+        padding: 60px 0;
+    }
+
+
+    .about-image {
+        width: 210px;
+        height: 210px;
+    }
+
+
+    #sobre .section-title {
+        font-size: 1.8rem;
+    }
+
+
+    .about-tags {
+        gap: 15px;
+
+        justify-content: center;
+    }
+
+
+    .about-quote {
+        padding-left: 35px;
+
+        margin-top: 30px;
+    }
+
+
+    .about-quote blockquote {
+        font-size: 15px;
+    }
+
+
+    .quote-symbol {
+        font-size: 65px;
+    }
+
+
+    .sabro-signature {
+        font-size: 32px;
+    }
+
+}
+
+
+/* =========================================
+   CONTATO
+========================================= */
+
+.contact-section {
+    padding: 55px 0;
+
+    background:
+        radial-gradient(
+            circle at center,
+            rgba(0, 174, 255, 0.15),
+            transparent 65%
+        ),
+        #06172e;
+
+    border-top: 1px solid var(--border);
+}
+
+.contact-section h2 {
+    font-size: 2rem;
+
+    font-weight: 700;
+}
+
+.contact-section p {
+    color: var(--text);
+
+    margin: 0;
 }

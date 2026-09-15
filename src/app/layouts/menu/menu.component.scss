@@ -1,17 +1,84 @@
-.text-muted{
-    font-size: 55%;
+#mainNav {
+    min-height: 72px;
+
+    background: rgba(2, 8, 22, 0.94);
+
+    border-bottom: 1px solid rgba(255,255,255,0.06);
+
+    backdrop-filter: blur(12px);
 }
-p {
-    margin-top: 0;
-    margin-bottom: 0rem;
+
+.navbar-brand {
+    gap: 12px;
 }
-.logo{
-    align-content: space-evenly;
-    padding: 0;
+
+.logo-sabro {
+    width: 48px;
+    height: 48px;
+    object-fit: contain;
 }
-.logo p{
-    margin: 0;
+
+.logo-text {
+    display: flex;
+    flex-direction: column;
 }
-#mainNav{
-    background: linear-gradient(135deg, rgba(0, 0, 0, 0.5), rgba(0, 0, 255, 0.5));
+
+.logo-title {
+    color: white;
+
+    font-size: 20px;
+    letter-spacing: 6px;
+
+    line-height: 1;
+}
+
+.logo-subtitle {
+    color: var(--muted);
+
+    font-size: 8px;
+
+    margin-top: 6px;
+
+    letter-spacing: 1px;
+}
+
+.navbar-nav {
+    gap: 12px;
+}
+
+.navbar-dark .navbar-nav .nav-link {
+    color: #e2e8f0;
+
+    padding: 10px 12px;
+
+    font-size: 14px;
+
+    transition: 0.3s;
+}
+
+.navbar-dark .navbar-nav .nav-link:hover {
+    color: var(--cyan);
+}
+
+.btn-nav-contato {
+    display: inline-flex;
+
+    align-items: center;
+
+    padding: 9px 18px;
+
+    border: 1px solid var(--cyan);
+
+    border-radius: 25px;
+
+    color: white;
+
+    font-size: 14px;
+
+    transition: 0.3s;
+}
+
+.btn-nav-contato:hover {
+    background: var(--cyan);
+    color: #00101c;
 }

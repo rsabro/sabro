@@ -5,9 +5,10 @@ import { HomeComponent } from './pages/home/home.component';
 import { FesaiComponent } from './pages/fesai/fesai.component';
 import { PageNotFoundComponent } from './layouts/page-not-found/page-not-found.component';
 import { ClockComponent } from './pages/clock/clock.component';
-import { SheetsComponent } from './pages/sheets/sheets.component'; // Import the component
+import { SheetsComponent } from './pages/sheets/sheets.component';
 import { LoginComponent } from './pages/login/login.component';
 import { BrutusracedeafsComponent } from './pages/brutusracedeafs/brutusracedeafs.component';
+import { InsepAcessivelComponent } from './pages/insep-acessivel/insep-acessivel.component';
 
 const routes: Routes = [
   { path: 'home', redirectTo: '', pathMatch: 'full' },
@@ -17,10 +18,14 @@ const routes: Routes = [
   { path: 'celulares', component: SheetsComponent },
   { path: 'clock', component: ClockComponent },
   { path: 'login', component: LoginComponent },
-  { path: '**', component: PageNotFoundComponent } // Wildcard route for a 404 page
-]
+  { path: 'insep-acessivel', component: InsepAcessivelComponent },
+
+  // Página 404 - sempre deve ficar por último
+  { path: '**', component: PageNotFoundComponent }
+];
+
 @NgModule({
   imports: [RouterModule.forRoot(routes)],
   exports: [RouterModule]
 })
-export class AppRoutingModule { }
+export class AppRoutingModule {}

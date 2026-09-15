@@ -1,3 +1,347 @@
-.figure-img{
-    width: 10%;
+/* =========================================
+   FESAI HERO
+========================================= */
+
+.fesai-hero {
+    min-height: 520px;
+
+    display: flex;
+    align-items: center;
+
+    padding: 120px 0 80px;
+
+    background:
+        radial-gradient(
+            circle at 80% 40%,
+            rgba(0, 200, 248, 0.18),
+            transparent 35%
+        ),
+        linear-gradient(
+            135deg,
+            #020816,
+            #06172e
+        );
+
+    border-bottom: 1px solid rgba(0, 200, 248, 0.12);
+}
+
+
+.fesai-hero h1 {
+    font-size: 4rem;
+
+    font-weight: 800;
+
+    margin-bottom: 10px;
+}
+
+
+.fesai-hero h2 {
+    font-size: 1.6rem;
+
+    font-weight: 600;
+
+    margin-bottom: 20px;
+
+    color: #d7e4f1;
+}
+
+
+.fesai-hero p {
+    max-width: 600px;
+
+    font-size: 16px;
+
+    line-height: 1.7;
+
+    color: #b8c6d8;
+
+    margin-bottom: 30px;
+}
+
+
+/* Logo */
+
+.fesai-logo {
+    width: 100%;
+    max-width: 260px;
+
+    height: auto;
+
+    filter:
+        drop-shadow(0 0 25px rgba(0, 200, 248, 0.22));
+
+    transition: transform 0.4s ease;
+}
+
+
+.fesai-logo:hover {
+    transform: scale(1.04);
+}
+
+
+/* =========================================
+   BOTÕES
+========================================= */
+
+.hero-buttons {
+    display: flex;
+
+    flex-wrap: wrap;
+
+    gap: 14px;
+}
+
+
+.btn-primary-sabro,
+.btn-outline-sabro {
+    display: inline-flex;
+
+    align-items: center;
+    justify-content: center;
+
+    padding: 12px 24px;
+
+    border-radius: 30px;
+
+    font-size: 14px;
+    font-weight: 600;
+
+    transition: 0.3s;
+}
+
+
+.btn-primary-sabro {
+    background: #00c8f8;
+
+    color: #00121c;
+
+    border: 1px solid #00c8f8;
+}
+
+
+.btn-primary-sabro:hover {
+    background: #31d6ff;
+
+    color: #00121c;
+
+    transform: translateY(-3px);
+
+    box-shadow:
+        0 12px 30px rgba(0, 200, 248, 0.22);
+}
+
+
+.btn-outline-sabro {
+    color: #ffffff;
+
+    border: 1px solid #00c8f8;
+
+    background: transparent;
+}
+
+
+.btn-outline-sabro:hover {
+    background: #00c8f8;
+
+    color: #00121c;
+
+    transform: translateY(-3px);
+}
+
+
+/* =========================================
+   SEÇÃO DO PROJETO
+========================================= */
+
+.fesai-project {
+    padding: 90px 0;
+
+    background: #020816;
+
+    color: white;
+}
+
+
+.fesai-project h2 {
+    font-size: 2.5rem;
+
+    font-weight: 700;
+
+    margin-bottom: 20px;
+}
+
+
+.fesai-project p {
+    color: #bcc8d8;
+
+    line-height: 1.8;
+
+    margin-bottom: 16px;
+}
+
+
+/* Imagem do site */
+
+.project-preview {
+    padding: 10px;
+
+    background: #061329;
+
+    border-radius: 18px;
+
+    border: 1px solid rgba(0, 200, 248, 0.18);
+
+    box-shadow:
+        0 20px 50px rgba(0, 0, 0, 0.35);
+
+    transition:
+        transform 0.35s ease,
+        box-shadow 0.35s ease,
+        border-color 0.35s ease;
+}
+
+
+.project-preview:hover {
+    transform: translateY(-7px);
+
+    border-color: rgba(0, 200, 248, 0.60);
+
+    box-shadow:
+        0 25px 60px rgba(0, 0, 0, 0.45),
+        0 0 25px rgba(0, 200, 248, 0.08);
+}
+
+
+.project-preview img {
+    width: 100%;
+
+    height: auto;
+
+    display: block;
+
+    border-radius: 12px;
+}
+
+
+/* Tecnologias */
+
+.project-info {
+    display: flex;
+
+    flex-wrap: wrap;
+
+    gap: 8px;
+
+    margin: 25px 0;
+}
+
+
+.project-info span {
+    padding: 5px 10px;
+
+    border-radius: 20px;
+
+    background: rgba(0, 200, 248, 0.08);
+
+    border: 1px solid rgba(0, 200, 248, 0.20);
+
+    color: #44dbff;
+
+    font-size: 11px;
+}
+
+
+/* Link */
+
+.project-link {
+    color: #00c8f8;
+
+    font-weight: 600;
+
+    text-decoration: none;
+}
+
+
+.project-link:hover {
+    color: white;
+}
+
+
+/* Label */
+
+.section-label {
+    display: inline-block;
+
+    margin-bottom: 14px;
+
+    color: #00c8f8;
+
+    font-size: 11px;
+
+    font-weight: 700;
+
+    letter-spacing: 2px;
+}
+
+
+/* =========================================
+   RESPONSIVO
+========================================= */
+
+@media (max-width: 992px) {
+
+    .fesai-hero {
+        text-align: center;
+
+        padding-top: 130px;
+    }
+
+
+    .fesai-hero p {
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+
+    .hero-buttons {
+        justify-content: center;
+    }
+
+
+    .fesai-logo {
+        margin-top: 45px;
+
+        max-width: 220px;
+    }
+
+}
+
+
+@media (max-width: 576px) {
+
+    .fesai-hero h1 {
+        font-size: 2.8rem;
+    }
+
+
+    .fesai-hero h2 {
+        font-size: 1.3rem;
+    }
+
+
+    .hero-buttons {
+        flex-direction: column;
+    }
+
+
+    .btn-primary-sabro,
+    .btn-outline-sabro {
+        width: 100%;
+    }
+
+
+    .fesai-project {
+        padding: 65px 0;
+    }
+
 }
